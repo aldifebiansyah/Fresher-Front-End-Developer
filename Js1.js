@@ -3,16 +3,19 @@
 const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function result(number) {
-    var result = [[]]
+    var result = []
     for(i = 0; i<number.length; i++){
-        if (number[i]%2==1){
-            result.push(number[i])
+        if (number[i]%2==0){
+            var a = []
+            a.push(number[i])
+        }else{
+            var b = []
+            b.push(number[i])
         }
-        else{
-            result.push(number[i])
-        }
+        result.push(a)
     }
-  
+    
+
     return result;
 }
 

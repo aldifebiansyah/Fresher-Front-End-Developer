@@ -3,14 +3,13 @@
 
 const arr1 = [12, 24, 51, 6, 92, 11];
 
-function result(arr1) {
-    var result = arr1.slice(3)
-    for(i = 0; i<result; i++){
-        result[i]=7;
-        result.push();
+function result(arr1) { 
+    for(i = 0; i<arr1.length; i++){
+        if(i<=2){
+            arr1.splice(i,1, 7);
+        }
     }
-
-    return result;
+    return arr1
 }
 
 console.log(result(arr1));
